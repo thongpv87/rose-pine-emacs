@@ -20,3 +20,7 @@ and
 ## Screenshots
 
 ![Rosé Pine for Emacs](https://nedo.s-ul.eu/1voOO2GC)
+
+## Thanks to
+
+- [Israel Romero](https://nedovtipa.github.io)
