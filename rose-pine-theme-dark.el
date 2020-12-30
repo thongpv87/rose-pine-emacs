@@ -3,7 +3,7 @@
 ;;
 ;; Author: Israel Romero (@nedovtipa)
 ;;
-;; URL: https://github.com/rose-pine/rose-pine-them
+;; URL: https://github.com/rose-pine/rose-pine-theme
 ;;
 ;; Version: 1.0
 
