@@ -23,4 +23,4 @@ and
 
 ## Thanks to
 
-- [Israel Romero](https://nedovtipa.github.io)
+- [Nedovtipa](https://nedovtipa.github.io)
