@@ -10,7 +10,7 @@ All natural pine, faux fur and a bit of soho vibes for the classy minimalist.
 
 ## Usage
 
-1. Clone into `~/.emacs.d/
+1. Clone into `~/.emacs.d/`
 2. Add to your `init.el` the following
 `(add-to-list 'load-path "~/.emacs.d/rose-pine-emacs/")`
 and
@@ -19,4 +19,4 @@ and
 
 ## Screenshots
 
-![Rosé Pine for Emacs](https://nedo.s-ul.eu/Wi1MwScb)
+![Rosé Pine for Emacs](https://nedo.s-ul.eu/1voOO2GC)
