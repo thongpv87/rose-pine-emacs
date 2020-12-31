@@ -156,7 +156,7 @@ background color that is barely perceptible."
 					:inherit nil
 					:box nil)
 
-  (set-face-attribute 'header-line nil
+(set-face-attribute 'header-line nil
 			  :weight 'light
 					  :foreground (face-foreground 'rose-face-default)
 					  :background (face-background 'rose-face-subtle)
@@ -659,3 +659,5 @@ function is a convenience wrapper used by `describe-package-1'."
 )
 
 (provide 'rose-pine-theme)
+
+;;; rose-pine-theme.el ends here
