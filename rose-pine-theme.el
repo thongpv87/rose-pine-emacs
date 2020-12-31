@@ -6,7 +6,7 @@
 ;; URL: https://github.com/rose-pine/rose-pine-theme
 ;;
 ;; Version: 1.0
-
+;;
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
 ;; the Free Software Foundation, either version 3 of the License, or
@@ -19,13 +19,12 @@
 ;;
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
+;;
 ;;; Commentary:
-
-;; All natural pine,  faux fur and a bit of soho vibes for the classy minimalist.
-;; ---------------------------------------------------------------------
-
-;; ---------------------------------------------------------------------
+;;
+;; All natural pine,  faux fur and a bit of soho vibes for the classy minimalist
+;;
+;; -----------------------------------------------------------------------------
 ;;
 ;; This file defines the 7 basic rose faces:
 ;;
@@ -123,7 +122,7 @@ background color that is barely perceptible."
 (if (display-graphic-p)
 	(set-face-attribute 'rose-face-strong nil
 						:foreground (face-foreground 'rose-face-default)
-						:family "Space Mono"  ;; Set your favorite font here :)
+						:family "monospace"
 						:weight 'light)
   (set-face-attribute 'rose-face-strong nil
 						:foreground (face-foreground 'rose-face-default)
