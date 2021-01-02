@@ -19,7 +19,7 @@ and
 
 ## Screenshots
 
-![Rosé Pine for Emacs](https://imgur.com/a/3NwRhVW)
+![Rosé Pine for Emacs](https://i.imgur.com/JBkPnHi.png)
 
 ## Thanks to
 
