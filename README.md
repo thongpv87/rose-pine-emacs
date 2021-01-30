@@ -23,4 +23,4 @@ and
 
 ## Thanks to
 
-- [Nedovtipa](https://nedovtipa.github.io)
+- [Caelie](https://github.com/Caelie)
