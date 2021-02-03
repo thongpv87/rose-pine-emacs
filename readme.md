@@ -22,7 +22,7 @@ and
 `(require 'rose-pine-theme-{color,moon,dawn})`
 3. Restart your emacs and enjoy :smile:
 
-### Using (straight.el)[https://github.com/raxod502/straight.el]
+### Using [straight.el](https://github.com/raxod502/straight.el)
 ```elisp
 (straight-use-package
  '(rose-pine-emacs
