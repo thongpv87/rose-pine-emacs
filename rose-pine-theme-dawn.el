@@ -24,19 +24,18 @@
 
 ;; All natural pine,  faux fur and a bit of soho vibes for the classy minimalist.
 ;; ---------------------------------------------------------------------
-(setq frame-background-mode   'dark)
+(setq frame-background-mode   'light)
 
-(defvar rose-color-foreground "#e0def4")
-(defvar rose-color-background "#232136")
-(defvar rose-color-highlight  "#191724")
-(defvar rose-color-critical   "#f6c177")
-(defvar rose-color-salient    "#c4a7e7")
-(defvar rose-color-strong     "#010101")
-(defvar rose-color-popout     "#eb6f92")
-(defvar rose-color-subtle     "#393552")
-(defvar rose-color-faded      "#59546d")
-(defvar rose-cursor           "#e0def4")
-
+(defvar nano-color-foreground  "#575279")
+(defvar nano-color-background  "#faf4ed")
+(defvar nano-color-highlight   "#faf4ed")
+(defvar nano-color-critical    "#b4637a")
+(defvar nano-color-salient     "#907aa9")
+(defvar nano-color-strong      "#000000")
+(defvar nano-color-popout      "#d7827e")
+(defvar nano-color-subtle      "#fffaf3")
+(defvar nano-color-faded       "#9893a5")
+(defvar nano-cursor            "#56949f")
 
 (require 'rose-pine-theme)
 (provide 'rose-pine-theme-dawn)
