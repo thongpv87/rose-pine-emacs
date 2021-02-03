@@ -17,12 +17,22 @@
 2. Add to your `init.el` the following
 `(add-to-list 'load-path "~/.emacs.d/rose-pine-emacs/")`
 and
-`(require 'rose-pine-theme-dark)`
-3. Restart your emacs :smile:
+`(require 'rose-pine-theme-{color,moon,dawn})`
+3. Restart your emacs and enjoy :smile:
 
 ## Gallery
 
-![Rosé Pine for Emacs](https://i.imgur.com/JBkPnHi.png)
+**Base variant**
+
+![Rosé Pine](https://i.imgur.com/JBkPnHi.png)
+
+**Moon variant**
+
+![Rosé Pine Moon](https://nedo.s-ul.eu/2UBGKz5Y)
+
+**Dawn variant**
+
+![Rosé Pine Dawn](https://nedo.s-ul.eu/oqKUYFgF)
 
 ## Thanks to
 
