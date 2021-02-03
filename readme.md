@@ -28,11 +28,11 @@ and
 
 **Moon variant**
 
-![Rosé Pine Moon](https://nedo.s-ul.eu/2UBGKz5Y)
+![Rosé Pine Moon](https://cdn.discordapp.com/attachments/743573851685912629/806320126978162708/unknown.png)
 
 **Dawn variant**
 
-![Rosé Pine Dawn](https://nedo.s-ul.eu/oqKUYFgF)
+![Rosé Pine Dawn](https://cdn.discordapp.com/attachments/743573851685912629/806320359217168424/unknown.png)
 
 ## Thanks to
 
