@@ -1,11 +1,11 @@
 ;; ---------------------------------------------------------------------
-;;; rose-pine-theme-dark.el
+;;; rose-pine-theme.el
 ;;
-;; Author: Israel Romero (@nedovtipa)
+;; Author: Israel Romero (@caelie)
 ;;
 ;; URL: https://github.com/rose-pine/rose-pine-theme
 ;;
-;; Version: 1.0
+;; Version: 0.1
 ;;
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -107,72 +107,72 @@ background color that is barely perceptible."
 (set-background-color rose-color-background)
 
 (set-face-attribute 'default nil
-					:foreground (face-foreground 'default)
-					:background (face-background 'default))
+                                        :foreground (face-foreground 'default)
+                                        :background (face-background 'default))
 (set-face-attribute 'rose-face-default nil
-					:foreground (face-foreground 'default)
-					:background (face-background 'default))
+                                        :foreground (face-foreground 'default)
+                                        :background (face-background 'default))
 (set-face-attribute 'rose-face-critical nil
-					:foreground (face-background 'default)
-					:background rose-color-critical)
+                                        :foreground (face-background 'default)
+                                        :background rose-color-critical)
 (set-face-attribute 'rose-face-popout nil
-					:foreground rose-color-popout)
+                                        :foreground rose-color-popout)
 (set-face-attribute 'rose-face-cursor nil
-					:foreground rose-cursor)
+                                        :foreground rose-cursor)
 (if (display-graphic-p)
-	(set-face-attribute 'rose-face-strong nil
-						:foreground (face-foreground 'rose-face-default)
-						:family "monospace"
-						:weight 'light)
+        (set-face-attribute 'rose-face-strong nil
+                                                :foreground (face-foreground 'rose-face-default)
+                                                :family "monospace"
+                                                :weight 'light)
   (set-face-attribute 'rose-face-strong nil
-						:foreground (face-foreground 'rose-face-default)
-						:weight 'bold))
+                                                :foreground (face-foreground 'rose-face-default)
+                                                :weight 'bold))
   (set-face-attribute 'rose-face-salient nil
-						:foreground rose-color-salient
-						:weight 'light)
+                                                :foreground rose-color-salient
+                                                :weight 'light)
   (set-face-attribute 'rose-face-faded nil
-						:foreground rose-color-faded
-						:weight 'light)
+                                                :foreground rose-color-faded
+                                                :weight 'light)
   (set-face-attribute 'rose-face-subtle nil
-						:background rose-color-subtle)
+                                                :background rose-color-subtle)
 
 
 
 ;; mode-line / header-line
 
 (set-face-attribute 'mode-line nil
-					:height 0.75
-					:foreground (face-foreground 'rose-face-faded)
-					:background (face-background 'rose-face-default)
-					:overline nil
-					:underline nil
-					:box nil)
+                                        :height 0.75
+                                        :foreground (face-foreground 'rose-face-faded)
+                                        :background (face-background 'rose-face-default)
+                                        :overline nil
+                                        :underline nil
+                                        :box nil)
 (set-face-attribute 'mode-line-inactive nil
-					:height 0.75
-					:foreground (face-foreground 'rose-face-faded)
-					:background (face-background 'rose-face-default)
-					:overline nil
-					:underline nil
-					:inherit nil
-					:box nil)
+                                        :height 0.75
+                                        :foreground (face-foreground 'rose-face-faded)
+                                        :background (face-background 'rose-face-default)
+                                        :overline nil
+                                        :underline nil
+                                        :inherit nil
+                                        :box nil)
 
 (set-face-attribute 'header-line nil
-			  :weight 'light
-					  :foreground (face-foreground 'rose-face-default)
-					  :background (face-background 'rose-face-subtle)
-					  :overline nil
-					  :underline nil
-					  :box nil
-					  :box `(:line-width 1
-							 :color ,(face-background 'rose-face-default)
-							 :style nil)
-					  :inherit nil)
+                          :weight 'light
+                                          :foreground (face-foreground 'rose-face-default)
+                                          :background (face-background 'rose-face-subtle)
+                                          :overline nil
+                                          :underline nil
+                                          :box nil
+                                          :box `(:line-width 1
+                                                         :color ,(face-background 'rose-face-default)
+                                                         :style nil)
+                                          :inherit nil)
 
 (set-face-attribute 'internal-border nil
-					:background (face-background 'rose-face-default))
+                                        :background (face-background 'rose-face-default))
 
 (if (display-graphic-p)
-	(set-face-attribute 'bold nil :weight 'regular)
+        (set-face-attribute 'bold nil :weight 'regular)
   (set-face-attribute 'bold nil :weight 'bold))
 
 ;; Structural
@@ -187,21 +187,21 @@ background color that is barely perceptible."
 (set-face 'cursor                                  'rose-face-default)
 
 (set-face-attribute 'cursor nil
-					:background (face-foreground 'rose-face-cursor))
+                                        :background (face-foreground 'rose-face-cursor))
 (set-face-attribute 'window-divider nil
-					:foreground (face-background 'rose-face-default))
+                                        :foreground (face-background 'rose-face-default))
 (set-face-attribute 'window-divider-first-pixel nil
-					:foreground rose-color-highlight)
+                                        :foreground rose-color-highlight)
 (set-face-attribute 'window-divider-last-pixel nil
-					:foreground rose-color-highlight)
+                                        :foreground rose-color-highlight)
 
 
 ;; Minibuffer / echo area
 (dolist (buffer (list " *Minibuf-0*" " *Echo Area 0*"
-					  " *Minibuf-1*" " *Echo Area 1*"))
+                                          " *Minibuf-1*" " *Echo Area 1*"))
   (when (get-buffer buffer)
-	(with-current-buffer buffer
-	  (face-remap-add-relative 'default 'rose-face-faded))))
+        (with-current-buffer buffer
+          (face-remap-add-relative 'default 'rose-face-faded))))
 
 
 ;; Semantic
@@ -217,8 +217,8 @@ background color that is barely perceptible."
 (set-face 'link                                    'rose-face-salient)
 (set-face 'fringe                                    'rose-face-faded)
 (set-face-attribute 'fringe nil
-					   :foreground (face-background 'rose-face-subtle)
-							   :background (face-background 'default))
+                                           :foreground (face-background 'rose-face-subtle)
+                                                           :background (face-background 'default))
 (set-face 'isearch                                  'rose-face-strong)
 (set-face 'isearch-fail                              'rose-face-faded)
 (set-face 'lazy-highlight                           'rose-face-subtle)
@@ -246,30 +246,30 @@ background color that is barely perceptible."
 ;; Highlight line mode
 (with-eval-after-load 'hl-line
   (set-face-attribute 'hl-line nil
-					  :background rose-color-highlight))
+                                          :background rose-color-highlight))
 
 ;; Buttons
 (with-eval-after-load 'cus-edit
   (set-face-attribute 'custom-button nil
-					  :foreground (face-foreground 'rose-face-faded)
-					  :background (face-background 'rose-face-default)
-					  :box `(:line-width 1
-							 :color ,(face-foreground 'rose-face-faded)
-							 :style nil))
+                                          :foreground (face-foreground 'rose-face-faded)
+                                          :background (face-background 'rose-face-default)
+                                          :box `(:line-width 1
+                                                         :color ,(face-foreground 'rose-face-faded)
+                                                         :style nil))
   (set-face-attribute 'custom-button-mouse nil
-					  :foreground (face-foreground 'rose-face-faded)
-					  :background (face-background 'rose-face-subtle)
-					  :box `(:line-width 1
-							 :color ,(face-foreground 'rose-face-faded)
-							 :style nil))
+                                          :foreground (face-foreground 'rose-face-faded)
+                                          :background (face-background 'rose-face-subtle)
+                                          :box `(:line-width 1
+                                                         :color ,(face-foreground 'rose-face-faded)
+                                                         :style nil))
   (set-face-attribute 'custom-button-pressed nil
-					  :foreground (face-background 'default)
-					  :background (face-foreground 'rose-face-salient)
-					  :inherit 'rose-face-salient
-					  :box `(:line-width 1
-							 :color ,(face-foreground 'rose-face-salient)
-							 :style nil)
-					  :inverse-video nil))
+                                          :foreground (face-background 'default)
+                                          :background (face-foreground 'rose-face-salient)
+                                          :inherit 'rose-face-salient
+                                          :box `(:line-width 1
+                                                         :color ,(face-foreground 'rose-face-salient)
+                                                         :style nil)
+                                          :inverse-video nil))
 
 ;; Documentation
 (with-eval-after-load 'info
@@ -354,20 +354,20 @@ background color that is barely perceptible."
   ;; Button face is hardcoded, we have to redefine the relevant
   ;; function
   (defun package-make-button (text &rest properties)
-	"Insert button labeled TEXT with button PROPERTIES at point.
+        "Insert button labeled TEXT with button PROPERTIES at point.
 PROPERTIES are passed to `insert-text-button', for which this
 function is a convenience wrapper used by `describe-package-1'."
-	(let ((button-text (if (display-graphic-p)
-						   text (concat "[" text "]")))
-		  (button-face (if (display-graphic-p)
-						   '(:box `(:line-width 1
-									:color ,rose-color-subtle
-									:style nil)
-								  :foreground rose-color-faded
-								  :background rose-color-subtle)
-						 'link)))
-	  (apply #'insert-text-button button-text
-			 'face button-face 'follow-link t properties))))
+        (let ((button-text (if (display-graphic-p)
+                                                   text (concat "[" text "]")))
+                  (button-face (if (display-graphic-p)
+                                                   '(:box `(:line-width 1
+                                                                        :color ,rose-color-subtle
+                                                                        :style nil)
+                                                                  :foreground rose-color-faded
+                                                                  :background rose-color-subtle)
+                                                 'link)))
+          (apply #'insert-text-button button-text
+                         'face button-face 'follow-link t properties))))
 
 ;; Flyspell
 (with-eval-after-load 'flyspell
@@ -389,7 +389,7 @@ function is a convenience wrapper used by `describe-package-1'."
   (set-face 'diff-changed                           'rose-face-popout)
   (set-face 'diff-added                            'rose-face-salient)
   (set-face 'diff-refine-added                    '(rose-face-salient
-													 rose-face-strong))
+                                                                                                         rose-face-strong))
   (set-face 'diff-refine-changed                    'rose-face-popout)
   (set-face 'diff-refine-removed                    'rose-face-faded)
   (set-face-attribute     'diff-refine-removed nil :strike-through t))
@@ -398,29 +398,29 @@ function is a convenience wrapper used by `describe-package-1'."
 (with-eval-after-load 'term
   (set-face 'term-bold                                   'rose-face-strong)
   (set-face-attribute 'term-color-black nil
-					  :foreground (face-foreground 'rose-face-default)
-					  :background (face-foreground 'rose-face-default))
+                                          :foreground (face-foreground 'rose-face-default)
+                                          :background (face-foreground 'rose-face-default))
   (set-face-attribute 'term-color-white nil
-					  :foreground (face-background 'rose-face-default)
-					  :background (face-background 'rose-face-default))
+                                          :foreground (face-background 'rose-face-default)
+                                          :background (face-background 'rose-face-default))
   (set-face-attribute 'term-color-blue nil
-					  :foreground "#31748f"
-					  :background "#3783a1")
+                                          :foreground "#31748f"
+                                          :background "#3783a1")
   (set-face-attribute 'term-color-cyan nil
-					  :foreground "#9ccfd8"
-					  :background "#89c6d0")
+                                          :foreground "#9ccfd8"
+                                          :background "#89c6d0")
   (set-face-attribute 'term-color-green nil
-					  :foreground "#706e86"
-					  :background "#7c7a92")
+                                          :foreground "#706e86"
+                                          :background "#7c7a92")
   (set-face-attribute 'term-color-magenta nil
-					  :foreground "#c4a7e7"
-					  :background "#b692e1")
+                                          :foreground "#c4a7e7"
+                                          :background "#b692e1")
   (set-face-attribute 'term-color-red nil
-					  :foreground "#eb6f92"
-					  :background "#ee85a2")
+                                          :foreground "#eb6f92"
+                                          :background "#ee85a2")
   (set-face-attribute 'term-color-yellow nil
-					  :foreground "#f6c177"
-					  :background "#f4b65f")) ;; rose pine color
+                                          :foreground "#f6c177"
+                                          :background "#f4b65f")) ;; rose pine color
 
 (with-eval-after-load 'calendar
   (set-face 'calendar-today                         'rose-face-strong))
@@ -434,7 +434,7 @@ function is a convenience wrapper used by `describe-package-1'."
   (set-face 'org-agenda-current-time                'rose-face-strong)
   (set-face 'org-agenda-date                        'rose-face-salient)
   (set-face 'org-agenda-date-today                  '(rose-face-strong
-													 rose-face-salient))
+                                                                                                         rose-face-salient))
   (set-face 'org-agenda-date-weekend                 'rose-face-faded)
   (set-face 'org-agenda-diary                        'rose-face-faded)
   (set-face 'org-agenda-dimmed-todo-face             'rose-face-faded)
