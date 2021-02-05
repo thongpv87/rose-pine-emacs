@@ -4,29 +4,17 @@
 ;; Author: Israel Romero (@caelie)
 ;;
 ;; URL: https://github.com/rose-pine/rose-pine-theme
-;;
+;; Created: December 2020
+;; Keywords: theming
+;; Package-Requires: (emacs "26")
 ;; Version: 0.1
 ;;
-;; This program is free software; you can redistribute it and/or modify
-;; it under the terms of the GNU General Public License as published by
-;; the Free Software Foundation, either version 3 of the License, or
-;; (at your option) any later version.
-;;
-;; This program is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;; GNU General Public License for more details.
-;;
-;; You should have received a copy of the GNU General Public License
-;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
-;;
 ;;; Commentary:
-;;
 ;; All natural pine,  faux fur and a bit of soho vibes for the classy minimalist
 ;;
 ;; -----------------------------------------------------------------------------
 ;;
-;; This file defines the 7 basic rose faces:
+;; This file defines the 7 basic faces:
 ;;
 ;; - rose-face-critical  - rose-face-popout   - rose-face-salient
 ;; - rose-face-default   - rose-face-faded    - rose-face-subtle
@@ -35,6 +23,7 @@
 ;; These faces are used for setting all faces in various modes. The only
 ;; exception is the highlight line mode that uses a very light color.
 ;;
+;; Based on: https://github.com/rougier/nano-emacs
 ;; ---------------------------------------------------------------------
 
 ;; When we set a face, we take care of removing any previous settings
@@ -122,7 +111,6 @@ background color that is barely perceptible."
 (if (display-graphic-p)
         (set-face-attribute 'rose-face-strong nil
                                                 :foreground (face-foreground 'rose-face-default)
-                                                :family "monospace"
                                                 :weight 'light)
   (set-face-attribute 'rose-face-strong nil
                                                 :foreground (face-foreground 'rose-face-default)
@@ -181,7 +169,6 @@ background color that is barely perceptible."
 (set-face 'bold-italic                              'rose-face-strong)
 (set-face 'region                                   'rose-face-subtle)
 (set-face 'highlight                                'rose-face-subtle)
-;;(set-face 'fixed-pitch                                     'default)
 (set-face 'fixed-pitch-serif                       'rose-face-default)
 (set-face 'variable-pitch                          'rose-face-default)
 (set-face 'cursor                                  'rose-face-default)
