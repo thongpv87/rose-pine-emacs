@@ -35,6 +35,8 @@ and
 
 ## Gallery
 
+> Tip: We use [nano-emacs](https://github.com/rougier/nano-emacs) to make our lovely previews
+
 **Base variant**
 
 ![Rosé Pine](https://i.imgur.com/JBkPnHi.png)
