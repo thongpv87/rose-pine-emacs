@@ -16,10 +16,11 @@
 ### Install Localy
 
 1. Clone into `~/.emacs.d/`
-2. Add to your `init.el` the following
-`(add-to-list 'load-path "~/.emacs.d/rose-pine-emacs/")`
-and
-`(require 'rose-pine-theme-{color,moon,dawn})`
+2. Add to your `init.el` the following:
+```elisp
+(add-to-list 'custom-theme-load-path "~/.emacs.d/rose-pine-emacs")`
+(require 'rose-pine-theme-{color,moon,dawn})   ;; Choose your favourite variant here :)
+```
 3. Restart your emacs and enjoy :smile:
 
 ### Using [straight.el](https://github.com/raxod502/straight.el)
@@ -30,7 +31,7 @@ and
    :repo "Caelie/rose-pine-emacs"
    :branch "master"))
 
-(require 'rose-pine-theme-{color,moon,down})
+(load-theme 'rose-pine-{theme-moon-dawn} t)
 ```
 
 ## Gallery
