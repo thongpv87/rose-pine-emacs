@@ -22,7 +22,7 @@
    :host github
    :repo "Caelie/rose-pine-emacs"
    :branch "master"))
-(load-theme 'rose-pine-{theme-moon-dawn} t)
+(load-theme 'rose-pine-{color-moon-dawn} t)
 ```
 
 ### Dependencies
