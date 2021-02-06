@@ -1,22 +1,20 @@
-;; ---------------------------------------------------------------------
-;;; rose-pine-color-theme.el
-;;
-;; Author: Israel Romero (@caelie)
-;;
-;; URL: https://github.com/rose-pine/rose-pine-theme
-;; Created: December 2020
-;; Keywords: theming
-;; Package-Requires: ((emacs "26") (autothemer))
-;; Version: 0.1
-;;
-;;; Commentary:
-;;
-;; All natural pine,  faux fur and a bit of soho vibes for the classy minimalist.
-;;
-;; Based on: https://github.com/rougier/nano-emacs
-;; ---------------------------------------------------------------------
+;;; rose-pine-color-theme.el --- All natural pine, faux fur and a bit of soho vibes for the classy minimalist.
 
+;; Authors: Israel Romero <@caelie>
+;; URL: http://github.com/caelie/rose-pine-emacs
+;; Version: 0.2
+;; Package-Requires: ((autothemer "0.2"))
+
+;;; Commentary:
+;;  All natural pine, faux fur and a bit of soho vibes for the classy minimalist
+
+;;; Uses Autothemer from 0.2 and is based on nano-emacs for the syntax higlithing 
+
+;;; Code:
 (require 'autothemer)
+
+(unless (>= emacs-major-version 26)
+  (error "Requires Emacs 26 or later"))
 
 (autothemer-deftheme
  rose-pine-color "All natural pine,  faux fur and a bit of soho vibes for the classy minimalist."
@@ -495,8 +493,17 @@
   
   ))
 
+;;;###autoload
+(and load-file-name
+     (boundp 'custom-theme-load-path)
+     (add-to-list 'custom-theme-load-path
+                  (file-name-as-directory
+                   (file-name-directory load-file-name))))
   
 (provide-theme 'rose-pine-color)
 
+;; Local Variables:
+;; eval: (when (fboundp 'rainbow-mode) (rainbow-mode 1))
 ;; End:
+
 ;;; rose-pine-color-theme.el ends here
