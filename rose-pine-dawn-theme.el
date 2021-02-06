@@ -28,7 +28,7 @@
   (high       "#6e6a86")  ;; highlight
   (love       "#b4637a")  ;; critical
   (iris       "#907aa9")  ;; salient
-  (surface    "#fffaf3")  ;; strong
+  (foam       "#56949f")  ;; strong
   (rose       "#d7827e")  ;; popout
   (subtle     "#6e6a86")  ;; subtle
   (faded      "#cecaed")  ;; faded
@@ -39,21 +39,21 @@
  ((default                   (:background base :foreground text))
   
   ;; Structural
-  (bold                      (:foreground surface))
+  (bold                      (:foreground foam))
   (italic                    (:foreground faded))
-  (bold-italic               (:foreground surface))
+  (bold-italic               (:foreground foam))
   (region                    (:background subtle))
   (highlight                 (:background subtle))
-  (fixed-pitch-serif         (:foregrund surface))
-  (variable-pitch            (:foregroud surface))
+  (fixed-pitch-serif         (:foregrund foam))
+  (variable-pitch            (:foregroud foam))
   (cursor                    (:background cursor))
 
   ;; Modeline
-  (mode-line                 (:background surface :foreground text))
-  (mode-line-inactive        (:background surface :foreground faded))
+  (mode-line                 (:background base :foreground text))
+  (mode-line-inactive        (:background base :foreground faded))
 
   ;; Windows
-  (window-divider (:background surface))
+  (window-divider (:background foam))
   (window-divider-first-pixel  (:foreground high))
   (window-divider-last-pixel   (:foreground high))
 
@@ -68,12 +68,12 @@
   (match                                     (:foreground rose))
 
   ;; General
-  (buffer-menu-buffer                        (:foreground surface))
-  (minibuffer-prompt                         (:foreground surface))
+  (buffer-menu-buffer                        (:foreground foam))
+  (minibuffer-prompt                         (:foreground foam))
   (link                                      (:foreground iris))
   (fringe                                    (:foreground faded))
 
-  (isearch                                   (:foreground surface))
+  (isearch                                   (:foreground foam))
   (isearch-fail                              (:foreground faded))
   (lazy-highlight                            (:foreground subtle))
   (trailing-whitespace                       (:foreground subtle))
@@ -90,8 +90,8 @@
   (font-lock-string-face                     (:foreground rose))
   (font-lock-constant-face                   (:foreground iris))
   (font-lock-warning-face                    (:foreground rose))
-  (font-lock-function-name-face              (:foreground surface))
-  (font-lock-variable-name-face              (:foreground surface))
+  (font-lock-function-name-face              (:foreground foam))
+  (font-lock-variable-name-face              (:foreground foam))
   (font-lock-builtin-face                    (:foreground iris))
   (font-lock-type-face                       (:foreground iris))
   (font-lock-keyword-face                    (:foreground iris))
@@ -126,18 +126,18 @@
 
   ;; Documentation
   (with-eval-after-load "info"
-    (info-menu-header                      (:foreground surface))
+    (info-menu-header                      (:foreground foam))
     (info-header-node                      (:foreground text))
     (info-index-match                      (:foreground iris))
     (Info-quoted                           (:foreground faded))
-    (info-title-1                          (:foreground surface))
-    (info-title-2                          (:foreground surface))
-    (info-title-3                          (:foreground surface))
-    (info-title-4                          (:foreground surface)))
+    (info-title-1                          (:foreground foam))
+    (info-title-2                          (:foreground foam))
+    (info-title-3                          (:foreground foam))
+    (info-title-4                          (:foreground foam)))
 
  ;; Bookmarks
   (with-eval-after-load "bookmark"
-    (bookmark-menu-heading              (:foreground surface))
+    (bookmark-menu-heading              (:foreground foam))
     (bookmark-menu-bookmark             (:foreground iris)))
 
   ;; Message
@@ -148,7 +148,7 @@
     (message-cited-text-3                  (:foreground faded))
     (message-cited-text-4                  (:foreground faded))
     (message-header-cc                     (:foreground text))
-    (message-header-name                   (:foreground surface))
+    (message-header-name                   (:foreground foam))
     (message-header-newsgroups             (:foreground text))
     (message-header-other                  (:foreground text))
     (message-header-subject                (:foreground iris))
@@ -159,28 +159,28 @@
  
   ;; Outline
   (with-eval-after-load "outline"
-    (outline-1                              (:foreground surface))
-    (outline-2                              (:foreground surface))
-    (outline-3                              (:foreground surface))
-    (outline-4                              (:foreground surface))
-    (outline-5                              (:foreground surface))
-    (outline-6                              (:foreground surface))
-    (outline-7                              (:foreground surface))
-    (outline-8                              (:foreground surface)))
+    (outline-1                              (:foreground foam))
+    (outline-2                              (:foreground foam))
+    (outline-3                              (:foreground foam))
+    (outline-4                              (:foreground foam))
+    (outline-5                              (:foreground foam))
+    (outline-6                              (:foreground foam))
+    (outline-7                              (:foreground foam))
+    (outline-8                              (:foreground foam)))
 
   ;; Interface
   (with-eval-after-load "cus-edit"
     (widget-field                        (:foreground subtle))
-    (widget-button                       (:foreground surface))
+    (widget-button                       (:foreground foam))
     (widget-single-line-field            (:foreground subtle))
-    (custom-group-subtitle               (:foreground surface))
-    (custom-group-tag                    (:foreground surface))
-    (custom-group-tag-1                  (:foreground surface))
+    (custom-group-subtitle               (:foreground foam))
+    (custom-group-tag                    (:foreground foam))
+    (custom-group-tag-1                  (:foreground foam))
     (custom-comment                      (:foreground faded))
     (custom-comment-tag                  (:foreground faded))
     (custom-changed                      (:foreground iris))
     (custom-modified                     (:foreground iris))
-    (custom-face-tag                     (:foreground surface))
+    (custom-face-tag                     (:foreground foam))
     (custom-variable-tag                 (:foreground text))
     (custom-invalid                      (:foreground love))
     (custom-visibility                   (:foreground rose))
@@ -214,24 +214,24 @@
   (with-eval-after-load "ido"
     (ido-first-match                        (:foreground iris))
     (ido-only-match                         (:foreground faded))
-    (ido-subdir                             (:foreground surface))
+    (ido-subdir                             (:foreground foam))
 
   ;; Diff
   (with-eval-after-load "diff-mode"
     (diff-header                                      (:foreground faded))
-    (set-face 'diff-file-header                       (:foreground surface))
+    (set-face 'diff-file-header                       (:foreground foam))
     (set-face 'diff-context                           (:foreground text)))
     (set-face 'diff-removed                           (:foreground faded))
     (set-face 'diff-changed                           (:foreground rose))
     (set-face 'diff-added                             (:foreground iris))
-    (set-face 'diff-refine-added                      (:background iris :foreground surface))
+    (set-face 'diff-refine-added                      (:background iris :foreground foam))
     (set-face 'diff-refine-changed                    (:foreground rose))
     (set-face 'diff-refine-removed                    (:foreground faded))
     (set-face-attribute     'diff-refine-removed nil :strike-through t))
 
 ;; Term
 (with-eval-after-load "term"
-  (set-face 'term-bold                                   (:foreground surface))
+  (set-face 'term-bold                                   (:foreground foam))
   (set-face-attribute 'term-color-black nil
                                           :foreground (face-foreground 'text)
                                           :background (face-foreground 'text))
@@ -258,7 +258,7 @@
                                           :background "#f4b65f"))
 
 (with-eval-after-load "calendar"
-  (calendar-today                         (:foreground surface)))
+  (calendar-today                         (:foreground foam)))
 
 
 
@@ -268,9 +268,9 @@
     (set-face 'org-agenda-calendar-sexp               (:foreground iris))
     (set-face 'org-agenda-clocking                    (:foreground faded))
     (set-face 'org-agenda-column-dateline             (:foreground faded))
-    (set-face 'org-agenda-current-time                (:foreground surface))
+    (set-face 'org-agenda-current-time                (:foreground foam))
     (set-face 'org-agenda-date                        (:foreground iris))
-    (set-face 'org-agenda-date-today                  (:background surface) (:foreground iris))
+    (set-face 'org-agenda-date-today                  (:background foam) (:foreground iris))
     (set-face 'org-agenda-date-weekend                (:foreground faded))
     (set-face 'org-agenda-diary                       (:foreground faded))
     (set-face 'org-agenda-dimmed-todo-face            (:foreground faded))
@@ -280,7 +280,7 @@
     (set-face 'org-agenda-filter-regexp               (:foreground faded))
     (set-face 'org-agenda-filter-tags                 (:foreground faded))
     (set-face 'org-agenda-restriction-lock            (:foreground faded))
-    (set-face 'org-agenda-structure                   (:foreground surface)))
+    (set-face 'org-agenda-structure                   (:foreground foam)))
 
   ;; org mode
   (with-eval-after-load "org"
@@ -308,8 +308,8 @@
     (org-formula                             (:foreground faded))
     (org-headline-done                       (:foreground faded))
     (org-latex-and-related                   (:foreground faded))
-    (org-level-1                             (:foreground surface))
-    (org-level-2                             (:foreground surface))
+    (org-level-1                             (:foreground foam))
+    (org-level-2                             (:foreground foam))
     (org-level-3                             (:foreground iris))
     (org-level-4                             (:foreground text))
     (org-level-5                             (:foreground text))
@@ -343,7 +343,7 @@
 
   ;; Mu4e
   (with-eval-after-load "mu4e"
-    (set-face 'mu4e-attach-number-face                 (:foreground surface))
+    (set-face 'mu4e-attach-number-face                 (:foreground foam))
     (set-face 'mu4e-cited-1-face                       (:foreground faded))
     (set-face 'mu4e-cited-2-face                       (:foreground faded))
     (set-face 'mu4e-cited-3-face                       (:foreground faded))
@@ -361,9 +361,9 @@
     (set-face 'mu4e-forwarded-face                     (:foreground faded))
     (set-face 'mu4e-header-face                        (:foreground text))
     (set-face 'mu4e-header-highlight-face              (:inherit  'hl-line))
-    (set-face 'mu4e-header-key-face                    (:foreground surface))
+    (set-face 'mu4e-header-key-face                    (:foreground foam))
     (set-face 'mu4e-header-marks-face                  (:foreground faded))
-    (set-face 'mu4e-header-title-face                  (:foreground surface))
+    (set-face 'mu4e-header-title-face                  (:foreground foam))
     (set-face 'mu4e-header-value-face                  (:foreground text))
     (set-face 'mu4e-highlight-face                     (:foreground rose))
     (set-face 'mu4e-link-face                          (:foreground iris))
@@ -374,9 +374,9 @@
     (set-face 'mu4e-replied-face                       (:foreground text))
     (set-face 'mu4e-special-header-value-face          (:foreground text))
     (set-face 'mu4e-system-face                        (:foreground faded))
-    (set-face 'mu4e-title-face                         (:foreground surface))
+    (set-face 'mu4e-title-face                         (:foreground foam))
     (set-face 'mu4e-trashed-face                       (:foreground faded))
-    (set-face 'mu4e-unread-face                        (:foreground surface))
+    (set-face 'mu4e-unread-face                        (:foreground foam))
     (set-face 'mu4e-url-number-face                    (:foreground faded))
     (set-face 'mu4e-view-body-face                     (:foreground text))
     (set-face 'mu4e-warning-face                       (:foreground rose)))
@@ -395,8 +395,8 @@
     (elfeed-search-last-update-face                    (:foreground iris))
     (elfeed-search-title-face                          (:foreground text))
     (elfeed-search-tag-face                            (:foreground faded))
-    (elfeed-search-unread-count-face                   (:foreground surface))
-    (elfeed-search-unread-title-face                   (:foreground surface)))
+    (elfeed-search-unread-count-face                   (:foreground foam))
+    (elfeed-search-unread-title-face                   (:foreground foam)))
 
 
   ;; RST mode
@@ -407,14 +407,14 @@
     (rst-definition                                   (:foreground iris))
     (rst-directive                                    (:foreground iris))
     (rst-emphasis1                                    (:foreground faded))
-    (rst-emphasis2                                    (:foreground surface))
+    (rst-emphasis2                                    (:foreground foam))
     (rst-external                                     (:foreground iris))
-    (rst-level-1                                      (:foreground surface))
-    (rst-level-2                                      (:foreground surface))
-    (rst-level-3                                      (:foreground surface))
-    (rst-level-4                                      (:foreground surface))
-    (rst-level-5                                      (:foreground surface))
-    (rst-level-6                                      (:foreground surface))
+    (rst-level-1                                      (:foreground foam))
+    (rst-level-2                                      (:foreground foam))
+    (rst-level-3                                      (:foreground foam))
+    (rst-level-4                                      (:foreground foam))
+    (rst-level-5                                      (:foreground foam))
+    (rst-level-6                                      (:foreground foam))
     (rst-literal                                      (:foreground iris))
     (rst-reference                                    (:foreground iris))
     (rst-transition                                   (:foreground text)))
@@ -422,20 +422,20 @@
   ;; Markdown mode
   (with-eval-after-load "markdown-mode"
     (markdown-blockquote-face              (:foreground text))
-    (markdown-bold-face                    (:foreground surface))
+    (markdown-bold-face                    (:foreground foam))
     (markdown-code-face                    (:foreground text))
     (markdown-comment-face                 (:foreground faded))
     (markdown-footnote-marker-face         (:foreground text))
     (markdown-footnote-text-face           (:foreground text))
     (markdown-gfm-checkbox-face            (:foreground text))
     (markdown-header-delimiter-face        (:foreground faded))
-    (markdown-header-face                  (:foreground surface))
-    (markdown-header-face-1                (:foreground surface))
-    (markdown-header-face-2                (:foreground surface))
-    (markdown-header-face-3                (:foreground surface))
-    (markdown-header-face-4                (:foreground surface))
-    (markdown-header-face-5                (:foreground surface))
-    (markdown-header-face-6                (:foreground surface))
+    (markdown-header-face                  (:foreground foam))
+    (markdown-header-face-1                (:foreground foam))
+    (markdown-header-face-2                (:foreground foam))
+    (markdown-header-face-3                (:foreground foam))
+    (markdown-header-face-4                (:foreground foam))
+    (markdown-header-face-5                (:foreground foam))
+    (markdown-header-face-6                (:foreground foam))
     (markdown-header-rule-face             (:foreground text))
     (markdown-highlight-face               (:foreground text))
     (markdown-hr-face                      (:foreground text))
@@ -469,17 +469,17 @@
     (ivy-action                              (:foreground faded))
     (ivy-completions-annotations             (:foreground faded))
     (ivy-confirm-face                        (:foreground faded))
-    (ivy-current-match                       (:background surface :foreground subtle))
-    (ivy-cursor                              (:foreground surface))
-    (ivy-grep-info                           (:foreground surface))
+    (ivy-current-match                       (:background foam :foreground subtle))
+    (ivy-cursor                              (:foreground foam))
+    (ivy-grep-info                           (:foreground foam))
     (ivy-grep-line-number                    (:foreground faded))
-    (ivy-highlight-face                      (:foreground surface))
+    (ivy-highlight-face                      (:foreground foam))
     (ivy-match-required-face                 (:foreground faded))
     (ivy-minibuffer-match-face-1             (:foreground iris))
     (ivy-minibuffer-match-face-2             (:foreground iris))
     (ivy-minibuffer-match-face-3             (:foreground iris))
     (ivy-minibuffer-match-face-4             (:foreground iris))
-    (ivy-minibuffer-match-highlight          (:foreground surface))
+    (ivy-minibuffer-match-highlight          (:foreground foam))
     (ivy-modified-buffer                     (:foreground faded))
     (ivy-modified-outside-buffer             (:foreground faded))
     (ivy-org                                 (:foreground faded))
