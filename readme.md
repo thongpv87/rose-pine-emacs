@@ -13,15 +13,19 @@
 
 ## Usage
 
-### Install Localy
-
-1. Clone into `~/.emacs.d/`
-2. Add to your `init.el` the following:
+### Installing with [straight.el](https://github.com/raxod502/straight.el)
 ```elisp
-(add-to-list 'custom-theme-load-path "~/.emacs.d/rose-pine-emacs")`
-(load-theme 'rose-pine-{color-dawn-moon} t)   ;; Choose your favourite variant here :)
+(straight-use-package
+ '(rose-pine-emacs
+   :host github
+   :repo "Caelie/rose-pine-emacs"
+   :branch "master"))
+(load-theme 'rose-pine-{theme-moon-dawn} t)
 ```
-3. Restart your emacs and enjoy :smile:
+
+### Dependencies
+
+- [autothemer.el](https://github.com/jasonm23/autothemer)
 
 ## Gallery
 
