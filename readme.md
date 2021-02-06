@@ -15,6 +15,8 @@
 
 ### Installing with [straight.el](https://github.com/raxod502/straight.el)
 ```elisp
+(use-package autothemer :ensure t)
+
 (straight-use-package
  '(rose-pine-emacs
    :host github
@@ -25,7 +27,7 @@
 
 ### Dependencies
 
-- [autothemer.el](https://github.com/jasonm23/autothemer)
+- [autothemer.el](https://github.com/jasonm23/autothemer) lovely emacs package to make themes more easier :relaxed:
 
 ## Gallery
 
