@@ -19,7 +19,7 @@
 2. Add to your `init.el` the following:
 ```elisp
 (add-to-list 'custom-theme-load-path "~/.emacs.d/rose-pine-emacs")`
-(require 'rose-pine-theme-{color,moon,dawn})   ;; Choose your favourite variant here :)
+(load-theme 'rose-pine-{color-dawn-moon} t)   ;; Choose your favourite variant here :)
 ```
 3. Restart your emacs and enjoy :smile:
 
