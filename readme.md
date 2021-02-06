@@ -23,17 +23,6 @@
 ```
 3. Restart your emacs and enjoy :smile:
 
-### Using [straight.el](https://github.com/raxod502/straight.el)
-```elisp
-(straight-use-package
- '(rose-pine-emacs
-   :host github
-   :repo "Caelie/rose-pine-emacs"
-   :branch "master"))
-
-(load-theme 'rose-pine-{theme-moon-dawn} t)
-```
-
 ## Gallery
 
 > Tip: We use [nano-emacs](https://github.com/rougier/nano-emacs) to make our lovely previews
