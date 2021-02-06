@@ -27,7 +27,7 @@
 
 ### Dependencies
 
-- [autothemer.el](https://github.com/jasonm23/autothemer) lovely emacs package to make themes more easier :relaxed:
+- [autothemer.el](https://github.com/jasonm23/autothemer) lovely emacs package to make themes easier :relaxed:
 
 ## Gallery
 
