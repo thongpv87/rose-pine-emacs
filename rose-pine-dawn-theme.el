@@ -1,5 +1,5 @@
 ;; ---------------------------------------------------------------------
-;;; rose-pine-theme.el
+;;; rose-pine-dawn-theme.el
 ;;
 ;; Author: Israel Romero (@caelie)
 ;;
@@ -19,21 +19,21 @@
 (require 'autothemer)
 
 (autothemer-deftheme
- rose-pine "All natural pine,  faux fur and a bit of soho vibes for the classy minimalist."
+ rose-pine-dawn "All natural pine,  faux fur and a bit of soho vibes for the classy minimalist."
 
  ((((class color) (min-colors #xFFFFFF)))                        ;; GUI mode
 
-  ;; Rose Pine
-  (text       "#e0def4")  ;; foreground
-  (base       "#191724")  ;; background
+  ;; Rose Pine Dawn
+  (text       "#575279")  ;; foreground
+  (base       "#faf4ed")  ;; background
   (high       "#6e6a86")  ;; highlight
-  (gold       "#f6c177")  ;; critical
-  (iris       "#c4a7e7")  ;; salient
-  (surface    "#555169")  ;; strong
-  (love       "#eb6f92")  ;; popout
+  (love       "#b4637a")  ;; critical
+  (iris       "#907aa9")  ;; salient
+  (surface    "#fffaf3")  ;; strong
+  (rose       "#d7827e")  ;; popout
   (subtle     "#6e6a86")  ;; subtle
   (faded      "#cecaed")  ;; faded
-  (cursor     "#e0def4")) ;; cursor
+  (cursor     "#286983")) ;; cursor
 
 
   ;; Faces
@@ -64,9 +64,9 @@
   ;; Semantic
   (shadow                                    (:foreground faded))
   (success                                   (:foreground iris))
-  (warning                                   (:foreground love))
-  (error                                     (:foreground gold))
-  (match                                     (:foreground love))
+  (warning                                   (:foreground rose))
+  (error                                     (:foreground love))
+  (match                                     (:foreground rose))
 
   ;; General
   (buffer-menu-buffer                        (:foreground surface))
@@ -78,19 +78,19 @@
   (isearch-fail                              (:foreground faded))
   (lazy-highlight                            (:foreground subtle))
   (trailing-whitespace                       (:foreground subtle))
-  (show-paren-match                          (:foreground love))
+  (show-paren-match                          (:foreground rose))
   (tooltip                                   (:height 0.85))
   (secondary-selection                       (:foreground subtle))
   (completions-common-part                   (:foreground faded))
-  (completions-first-difference              (:foreground love))
+  (completions-first-difference              (:foreground rose))
  
 
   ;; Programmation mode
   (font-lock-comment-face                    (:foreground faded))
   (font-lock-doc-face                        (:foreground faded))
-  (font-lock-string-face                     (:foreground love))
+  (font-lock-string-face                     (:foreground rose))
   (font-lock-constant-face                   (:foreground iris))
-  (font-lock-warning-face                    (:foreground love))
+  (font-lock-warning-face                    (:foreground rose))
   (font-lock-function-name-face              (:foreground surface))
   (font-lock-variable-name-face              (:foreground surface))
   (font-lock-builtin-face                    (:foreground iris))
@@ -155,7 +155,7 @@
     (message-header-subject                (:foreground iris))
     (message-header-to                     (:foreground iris))
     (message-header-xheader                (:foreground text))
-    (message-mml                           (:foreground love))
+    (message-mml                           (:foreground rose))
     (message-separator                     (:foreground faded)))
  
   ;; Outline
@@ -184,7 +184,7 @@
     (custom-face-tag                     (:foreground surface))
     (custom-variable-tag                 (:foreground text))
     (custom-invalid                      (:foreground love))
-    (custom-visibility                   (:foreground iris))
+    (custom-visibility                   (:foreground rose))
     (custom-state                        (:foreground iris))
     (custom-link                         (:foreground iris)))
 
@@ -208,8 +208,8 @@
 
   ;; Flyspell
   (with-eval-after-load "flyspell"
-    (flyspell-duplicate                     (:foreground love))
-    (flyspell-incorrect                     (:foreground love)))
+    (flyspell-duplicate                     (:foreground rose))
+    (flyspell-incorrect                     (:foreground rose)))
 
   ;; Ido
   (with-eval-after-load "ido"
@@ -223,10 +223,10 @@
     (set-face 'diff-file-header                       (:foreground surface))
     (set-face 'diff-context                           (:foreground text)))
     (set-face 'diff-removed                           (:foreground faded))
-    (set-face 'diff-changed                           (:foreground love))
+    (set-face 'diff-changed                           (:foreground rose))
     (set-face 'diff-added                             (:foreground iris))
     (set-face 'diff-refine-added                      (:background iris :foreground surface))
-    (set-face 'diff-refine-changed                    (:foreground love))
+    (set-face 'diff-refine-changed                    (:foreground rose))
     (set-face 'diff-refine-removed                    (:foreground faded))
     (set-face-attribute     'diff-refine-removed nil :strike-through t))
 
@@ -340,7 +340,7 @@
     (org-upcoming-deadline                   (:foreground faded))
     (org-verbatim                            (:foreground faded))
     (org-verse                               (:foreground faded))
-    (org-warning                             (:foreground love)))
+    (org-warning                             (:foreground rose)))
 
   ;; Mu4e
   (with-eval-after-load "mu4e"
@@ -357,7 +357,7 @@
     (set-face 'mu4e-contact-face                       (:foreground iris))
     (set-face 'mu4e-context-face                       (:foreground faded))
     (set-face 'mu4e-draft-face                         (:foreground faded))
-    (set-face 'mu4e-flagged-face                       (:foreground love))
+    (set-face 'mu4e-flagged-face                       (:foreground rose))
     (set-face 'mu4e-footer-face                        (:foreground faded))
     (set-face 'mu4e-forwarded-face                     (:foreground faded))
     (set-face 'mu4e-header-face                        (:foreground text))
@@ -366,7 +366,7 @@
     (set-face 'mu4e-header-marks-face                  (:foreground faded))
     (set-face 'mu4e-header-title-face                  (:foreground surface))
     (set-face 'mu4e-header-value-face                  (:foreground text))
-    (set-face 'mu4e-highlight-face                     (:foreground love))
+    (set-face 'mu4e-highlight-face                     (:foreground rose))
     (set-face 'mu4e-link-face                          (:foreground iris))
     (set-face 'mu4e-modeline-face                      (:foreground faded))
     (set-face 'mu4e-moved-face                         (:foreground faded))
@@ -380,15 +380,15 @@
     (set-face 'mu4e-unread-face                        (:foreground surface))
     (set-face 'mu4e-url-number-face                    (:foreground faded))
     (set-face 'mu4e-view-body-face                     (:foreground text))
-    (set-face 'mu4e-warning-face                       (:foreground love)))
+    (set-face 'mu4e-warning-face                       (:foreground rose)))
 
   ;; Elfeed
   (with-eval-after-load "elfeed"
     (elfeed-log-date-face                              (:foreground faded))
     (elfeed-log-info-level-face                        (:foreground text))
     (elfeed-log-debug-level-face                       (:foreground text))
-    (elfeed-log-warn-level-face                        (:foreground love))
-    (elfeed-log-error-level-face                       (:foreground love))
+    (elfeed-log-warn-level-face                        (:foreground rose))
+    (elfeed-log-error-level-face                       (:foreground rose))
     (elfeed-search-tag-face                            (:foreground faded))
     (elfeed-search-date-face                           (:foreground faded))
     (elfeed-search-feed-face                           (:foreground iris))
@@ -445,7 +445,7 @@
     (markdown-html-entity-face             (:foreground text))
     (markdown-html-tag-delimiter-face      (:foreground text))
     (markdown-html-tag-name-face           (:foreground text))
-    (markdown-inline-code-face             (:foreground love))
+    (markdown-inline-code-face             (:foreground rose))
     (markdown-italic-face                  (:foreground faded))
     (markdown-language-info-face           (:foreground text))
     (markdown-language-keyword-face        (:foreground text))
@@ -496,7 +496,7 @@
   ))
 
   
-(provide-theme 'rose-pine)
+(provide-theme 'rose-pine-dawn)
 
 ;; End:
-;;; rose-pine-theme.el ends here
+;;; rose-pine-dawn-theme.el ends here

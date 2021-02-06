@@ -1,5 +1,5 @@
 ;; ---------------------------------------------------------------------
-;;; rose-pine-theme.el
+;;; rose-pine-moon-theme.el
 ;;
 ;; Author: Israel Romero (@caelie)
 ;;
@@ -19,21 +19,21 @@
 (require 'autothemer)
 
 (autothemer-deftheme
- rose-pine "All natural pine,  faux fur and a bit of soho vibes for the classy minimalist."
+ rose-pine-moon "All natural pine,  faux fur and a bit of soho vibes for the classy minimalist."
 
  ((((class color) (min-colors #xFFFFFF)))                        ;; GUI mode
 
-  ;; Rose Pine
+  ;; Rose Pine Moon
   (text       "#e0def4")  ;; foreground
-  (base       "#191724")  ;; background
-  (high       "#6e6a86")  ;; highlight
+  (base       "#232136")  ;; background
+  (high       "#393552")  ;; highlight
   (gold       "#f6c177")  ;; critical
   (iris       "#c4a7e7")  ;; salient
-  (surface    "#555169")  ;; strong
+  (surface    "#6e6a86")  ;; strong
   (love       "#eb6f92")  ;; popout
-  (subtle     "#6e6a86")  ;; subtle
-  (faded      "#cecaed")  ;; faded
-  (cursor     "#e0def4")) ;; cursor
+  (subtle     "#2a273f")  ;; subtle
+  (faded      "#6e6a86")  ;; faded
+  (cursor     "#c4a7e7")) ;; cursor
 
 
   ;; Faces
@@ -496,7 +496,7 @@
   ))
 
   
-(provide-theme 'rose-pine)
+(provide-theme 'rose-pine-moon)
 
 ;; End:
-;;; rose-pine-theme.el ends here
+;;; rose-pine-moon-theme.el ends here
