@@ -8,7 +8,7 @@
 ;;; Commentary:
 ;;  All natural pine, faux fur and a bit of soho vibes for the classy minimalist
 
-;;; Uses Autothemer from 0.2 and is based on nano-emacs for the syntax higlithing 
+;;; Uses Autothemer from 0.2 and is based on nano-emacs for the syntax highlithing
 
 ;;; Code:
 
@@ -37,7 +37,7 @@
 
   ;; Faces
  ((default                   (:background base :foreground text))
-  
+
   ;; Structural
   (bold                      (:foreground foam))
   (italic                    (:foreground faded))
@@ -57,9 +57,6 @@
   (window-divider-first-pixel  (:foreground high))
   (window-divider-last-pixel   (:foreground high))
 
-  ;; Minibuffer / echo area
-  ;; TODO
- 
   ;; Semantic
   (shadow                                    (:foreground faded))
   (success                                   (:foreground iris))
@@ -82,7 +79,7 @@
   (secondary-selection                       (:foreground subtle))
   (completions-common-part                   (:foreground faded))
   (completions-first-difference              (:foreground rose))
- 
+
 
   ;; Programmation mode
   (font-lock-comment-face                    (:foreground faded))
@@ -156,7 +153,7 @@
     (message-header-xheader                (:foreground text))
     (message-mml                           (:foreground rose))
     (message-separator                     (:foreground faded)))
- 
+
   ;; Outline
   (with-eval-after-load "outline"
     (outline-1                              (:foreground foam))
@@ -216,22 +213,36 @@
     (ido-only-match                         (:foreground faded))
     (ido-subdir                             (:foreground foam))
 
+  ;; Eros and Rainbow-delimiters
+  (eros-result-overlay-face                 (:foreground  text :background base))
+  (rainbow-delimiters-base-error-face       (:foreground  love :background base))
+  (rainbow-delimiters-depth-1-face          (:foreground  foam))
+  (rainbow-delimiters-depth-2-face          (:foreground  text))
+  (rainbow-delimiters-depth-3-face          (:foreground  text))
+  (rainbow-delimiters-depth-4-face          (:foreground  text))
+  (rainbow-delimiters-depth-5-face          (:foreground  text))
+  (rainbow-delimiters-depth-6-face          (:foreground  text))
+  (rainbow-delimiters-depth-7-face          (:foreground  text))
+  (rainbow-delimiters-depth-8-face          (:foreground  text))
+  (rainbow-delimiters-depth-9-face          (:foreground  text))
+
+
   ;; Diff
   (with-eval-after-load "diff-mode"
     (diff-header                                      (:foreground faded))
-    (set-face 'diff-file-header                       (:foreground foam))
-    (set-face 'diff-context                           (:foreground text)))
-    (set-face 'diff-removed                           (:foreground faded))
-    (set-face 'diff-changed                           (:foreground rose))
-    (set-face 'diff-added                             (:foreground iris))
-    (set-face 'diff-refine-added                      (:background iris :foreground foam))
+    (diff-file-header                                 (:foreground foam))
+    (diff-context                                     (:foreground text)))
+    (diff-removed                                     (:foreground faded))
+    (diff-changed                                     (:foreground rose))
+    (diff-added                                       (:foreground iris))
+    (diff-refine-added                                (:background iris :foreground foam))
     (set-face 'diff-refine-changed                    (:foreground rose))
     (set-face 'diff-refine-removed                    (:foreground faded))
     (set-face-attribute     'diff-refine-removed nil :strike-through t))
 
 ;; Term
 (with-eval-after-load "term"
-  (set-face 'term-bold                                   (:foreground foam))
+  (term-bold                                   (:foreground foam))
   (set-face-attribute 'term-color-black nil
                                           :foreground (face-foreground 'text)
                                           :background (face-foreground 'text))
@@ -264,23 +275,23 @@
 
   ;; org-agenda
   (with-eval-after-load "org-agenda"
-    (set-face 'org-agenda-calendar-event              (:foreground text))
-    (set-face 'org-agenda-calendar-sexp               (:foreground iris))
-    (set-face 'org-agenda-clocking                    (:foreground faded))
-    (set-face 'org-agenda-column-dateline             (:foreground faded))
-    (set-face 'org-agenda-current-time                (:foreground foam))
-    (set-face 'org-agenda-date                        (:foreground iris))
-    (set-face 'org-agenda-date-today                  (:background foam) (:foreground iris))
-    (set-face 'org-agenda-date-weekend                (:foreground faded))
-    (set-face 'org-agenda-diary                       (:foreground faded))
-    (set-face 'org-agenda-dimmed-todo-face            (:foreground faded))
-    (set-face 'org-agenda-done                        (:foreground faded))
-    (set-face 'org-agenda-filter-category             (:foreground faded))
-    (set-face 'org-agenda-filter-effort               (:foreground faded))
-    (set-face 'org-agenda-filter-regexp               (:foreground faded))
-    (set-face 'org-agenda-filter-tags                 (:foreground faded))
-    (set-face 'org-agenda-restriction-lock            (:foreground faded))
-    (set-face 'org-agenda-structure                   (:foreground foam)))
+    (org-agenda-calendar-event              (:foreground text))
+    (org-agenda-calendar-sexp               (:foreground iris))
+    (org-agenda-clocking                    (:foreground faded))
+    (org-agenda-column-dateline             (:foreground faded))
+    (org-agenda-current-time                (:foreground foam))
+    (org-agenda-date                        (:foreground iris))
+    (org-agenda-date-today                  (:background foam :foreground iris))
+    (org-agenda-date-weekend                (:foreground faded))
+    (org-agenda-diary                       (:foreground faded))
+    (org-agenda-dimmed-todo-face            (:foreground faded))
+    (org-agenda-done                        (:foreground faded))
+    (org-agenda-filter-category             (:foreground faded))
+    (org-agenda-filter-effort               (:foreground faded))
+    (org-agenda-filter-regexp               (:foreground faded))
+    (org-agenda-filter-tags                 (:foreground faded))
+    (org-agenda-restriction-lock            (:foreground faded))
+    (org-agenda-structure                   (:foreground foam)))
 
   ;; org mode
   (with-eval-after-load "org"
@@ -343,43 +354,43 @@
 
   ;; Mu4e
   (with-eval-after-load "mu4e"
-    (set-face 'mu4e-attach-number-face                 (:foreground foam))
-    (set-face 'mu4e-cited-1-face                       (:foreground faded))
-    (set-face 'mu4e-cited-2-face                       (:foreground faded))
-    (set-face 'mu4e-cited-3-face                       (:foreground faded))
-    (set-face 'mu4e-cited-4-face                       (:foreground faded))
-    (set-face 'mu4e-cited-5-face                       (:foreground faded))
-    (set-face 'mu4e-cited-6-face                       (:foreground faded))
-    (set-face 'mu4e-cited-7-face                       (:foreground faded))
-    (set-face 'mu4e-compose-header-face                (:foreground faded))
-    (set-face 'mu4e-compose-separator-face             (:foreground faded))
-    (set-face 'mu4e-contact-face                       (:foreground iris))
-    (set-face 'mu4e-context-face                       (:foreground faded))
-    (set-face 'mu4e-draft-face                         (:foreground faded))
-    (set-face 'mu4e-flagged-face                       (:foreground rose))
-    (set-face 'mu4e-footer-face                        (:foreground faded))
-    (set-face 'mu4e-forwarded-face                     (:foreground faded))
-    (set-face 'mu4e-header-face                        (:foreground text))
-    (set-face 'mu4e-header-highlight-face              (:inherit  'hl-line))
-    (set-face 'mu4e-header-key-face                    (:foreground foam))
-    (set-face 'mu4e-header-marks-face                  (:foreground faded))
-    (set-face 'mu4e-header-title-face                  (:foreground foam))
-    (set-face 'mu4e-header-value-face                  (:foreground text))
-    (set-face 'mu4e-highlight-face                     (:foreground rose))
-    (set-face 'mu4e-link-face                          (:foreground iris))
-    (set-face 'mu4e-modeline-face                      (:foreground faded))
-    (set-face 'mu4e-moved-face                         (:foreground faded))
-    (set-face 'mu4e-ok-face                            (:foreground faded))
-    (set-face 'mu4e-region-code                        (:foreground faded))
-    (set-face 'mu4e-replied-face                       (:foreground text))
-    (set-face 'mu4e-special-header-value-face          (:foreground text))
-    (set-face 'mu4e-system-face                        (:foreground faded))
-    (set-face 'mu4e-title-face                         (:foreground foam))
-    (set-face 'mu4e-trashed-face                       (:foreground faded))
-    (set-face 'mu4e-unread-face                        (:foreground foam))
-    (set-face 'mu4e-url-number-face                    (:foreground faded))
-    (set-face 'mu4e-view-body-face                     (:foreground text))
-    (set-face 'mu4e-warning-face                       (:foreground rose)))
+    (mu4e-attach-number-face                 (:foreground foam))
+    (mu4e-cited-1-face                       (:foreground faded))
+    (mu4e-cited-2-face                       (:foreground faded))
+    (mu4e-cited-3-face                       (:foreground faded))
+    (mu4e-cited-4-face                       (:foreground faded))
+    (mu4e-cited-5-face                       (:foreground faded))
+    (mu4e-cited-6-face                       (:foreground faded))
+    (mu4e-cited-7-face                       (:foreground faded))
+    (mu4e-compose-header-face                (:foreground faded))
+    (mu4e-compose-separator-face             (:foreground faded))
+    (mu4e-contact-face                       (:foreground iris))
+    (mu4e-context-face                       (:foreground faded))
+    (mu4e-draft-face                         (:foreground faded))
+    (mu4e-flagged-face                       (:foreground rose))
+    (mu4e-footer-face                        (:foreground faded))
+    (mu4e-forwarded-face                     (:foreground faded))
+    (mu4e-header-face                        (:foreground text))
+    (mu4e-header-highlight-face              (:inherit  'hl-line))
+    (mu4e-header-key-face                    (:foreground foam))
+    (mu4e-header-marks-face                  (:foreground faded))
+    (mu4e-header-title-face                  (:foreground foam))
+    (mu4e-header-value-face                  (:foreground text))
+    (mu4e-highlight-face                     (:foreground rose))
+    (mu4e-link-face                          (:foreground iris))
+    (mu4e-modeline-face                      (:foreground faded))
+    (mu4e-moved-face                         (:foreground faded))
+    (mu4e-ok-face                            (:foreground faded))
+    (mu4e-region-code                        (:foreground faded))
+    (mu4e-replied-face                       (:foreground text))
+    (mu4e-special-header-value-face          (:foreground text))
+    (mu4e-system-face                        (:foreground faded))
+    (mu4e-title-face                         (:foreground foam))
+    (mu4e-trashed-face                       (:foreground faded))
+    (mu4e-unread-face                        (:foreground foam))
+    (mu4e-url-number-face                    (:foreground faded))
+    (mu4e-view-body-face                     (:foreground text))
+    (mu4e-warning-face                       (:foreground rose)))
 
   ;; Elfeed
   (with-eval-after-load "elfeed"
@@ -491,7 +502,7 @@
     (ivy-yanked-word                         (:foreground faded)))
 
 
-  
+
   ))
 
 ;;;###autoload
@@ -503,8 +514,6 @@
 
 (provide-theme 'rose-pine-dawn)
 
-;; Local Variables:
-;; eval: (when (fboundp 'rainbow-mode) (rainbow-mode 1))
 ;; End:
 
 ;;; rose-pine-dawn-theme.el ends here
