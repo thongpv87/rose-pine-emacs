@@ -8,7 +8,7 @@
 ;;; Commentary:
 ;;  All natural pine, faux fur and a bit of soho vibes for the classy minimalist
 
-;;; Uses Autothemer from 0.2 and is based on nano-emacs for the syntax highlithing
+;;; Uses Autothemer from 0.2 and is based on nano-emacs for the syntax highlighting
 
 ;;; Code:
 (require 'autothemer)
