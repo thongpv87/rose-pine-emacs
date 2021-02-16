@@ -506,7 +506,6 @@
   ))
 
 
-(provide-theme 'rose-pine-moon)
 
 ;;;###autoload
 (and load-file-name
