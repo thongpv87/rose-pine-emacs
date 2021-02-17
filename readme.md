@@ -25,6 +25,16 @@
 (load-theme 'rose-pine-{color-moon-dawn} t)
 ```
 
+### Installing on spacemacs 
+```elisp
+(defun dotspacemacs/init ()
+    (setq-default dotspacemacs-themes
+        '((rose-pine-color 
+           :location (recipe 
+                      :fetcher github
+                      :repo "Caelie/rose-pine-emacs")))))
+```
+
 ### Dependencies
 
 - [autothemer.el](https://github.com/jasonm23/autothemer) lovely emacs package to make themes easier :relaxed:
