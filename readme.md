@@ -20,7 +20,7 @@
 (straight-use-package
  '(rose-pine-emacs
    :host github
-   :repo "Caelie/rose-pine-emacs"
+   :repo "thongpv87/rose-pine-emacs"
    :branch "master"))
 (load-theme 'rose-pine-{color-moon-dawn} t)
 ```
